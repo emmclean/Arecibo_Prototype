@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>EVA Field Notes</title>
-</head>
-<body>
+	<head>
+		<title>EVA Field Notes</title>
+	</head>
+	<body>
 
-<h1>EVA Field Notes</h1>
-<form>
-<input type="file" accept="audio/*;capture=microphone"> <br><br>
-<input type="file" accept="audio/*" capture> <br><br>
-<input type="file" accept="image/*" capture> <br><br>
-<input type="file" accept="video/*" capture>
-</form>
-
-</body>
+		<h1>EVA Field Notes</h1>
+		<form action="htmlData.php" method="post">
+			Bag No.: <input name="bagno" type="text"><br><br>
+			<input name="Audio" type="file" accept="audio/*;capture=microphone"> <br><br>
+			<input name="Photo" type="file" accept="image/*" capture> <br><br>
+			<input name="Video" type="file" accept="video/*" capture>
+			<input value="Submit" type="submit" name="formSubmit">
+			<input value="Reset" type="reset">
+			<input value="Help" type="button" onclick="window.location.href='problems.html'">
+		</form>
+	</body>
 </html>
